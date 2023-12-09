@@ -107,13 +107,13 @@ frame-system-benchmarking = { git = "https://github.com/agryaznov/polkadot-sdk.g
 pallet-election-provider-support-benchmarking = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false, optional = true }
 hex-literal = "0.4.1"
 
-runtime-common = { package = "polkadot-runtime-common", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
-runtime-parachains = { package = "polkadot-runtime-parachains", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
-primitives = { package = "polkadot-primitives", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
+runtime-common = { package = "polkadot-runtime-common", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+runtime-parachains = { package = "polkadot-runtime-parachains", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+primitives = { package = "polkadot-primitives", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 
-xcm = { package = "xcm", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
-xcm-executor = { package = "xcm-executor", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
-xcm-builder = { package = "xcm-builder", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
+xcm = { package = "xcm", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+xcm-executor = { package = "xcm-executor", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+xcm-builder = { package = "xcm-builder", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 
 [dev-dependencies]
 tiny-keccak = { version = "2.0.2", features = ["keccak"] }
