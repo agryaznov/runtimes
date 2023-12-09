@@ -16,7 +16,7 @@ sp-runtime = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "
 sp-weights = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 sp-core = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 
-xcm = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+xcm = { package = "staging-xcm", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 
 [features]
 default = [ "std" ]
