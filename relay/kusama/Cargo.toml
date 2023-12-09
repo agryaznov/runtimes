@@ -111,7 +111,7 @@ runtime-common = { package = "polkadot-runtime-common", default-features = false
 runtime-parachains = { package = "polkadot-runtime-parachains", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 primitives = { package = "polkadot-primitives", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 
-xcm = { package = "xcm", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+xcm = { package = "staging-xcm", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 xcm-executor = { package = "xcm-executor", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 xcm-builder = { package = "xcm-builder", default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 
