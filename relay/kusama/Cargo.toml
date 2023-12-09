@@ -22,8 +22,12 @@ smallvec = "1.8.0"
 authority-discovery-primitives = { package = "sp-authority-discovery", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 babe-primitives = { package = "sp-consensus-babe", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 beefy-primitives = { package = "sp-consensus-beefy", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+binary-merkle-tree = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-genesis-builder = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 kusama-runtime-constants = { package = "kusama-runtime-constants", path = "constants", default-features = false }
 sp-api = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-storage = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-application-crypto = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 inherents = { package = "sp-inherents", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 offchain-primitives = { package = "sp-offchain", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 sp-std = { package = "sp-std", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
@@ -352,9 +356,3 @@ on-chain-release-build = [ "sp-api/disable-logging" ]
 fast-runtime = []
 
 runtime-metrics = [ "runtime-parachains/runtime-metrics", "sp-io/with-tracing" ]
-
-[workspace]
-members = [
-	"",
-	"constants",
-]
