@@ -19,101 +19,97 @@ serde_derive = { version = "1.0.117", optional = true }
 static_assertions = "1.1.0"
 smallvec = "1.8.0"
 
-authority-discovery-primitives = { package = "sp-authority-discovery", default-features = false , version = "23.0.0" }
-babe-primitives = { package = "sp-consensus-babe", default-features = false , version = "0.29.0" }
-beefy-primitives = { package = "sp-consensus-beefy", default-features = false , version = "10.0.0" }
-binary-merkle-tree = { default-features = false , version = "10.0.0" }
+authority-discovery-primitives = { package = "sp-authority-discovery", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+babe-primitives = { package = "sp-consensus-babe", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+beefy-primitives = { package = "sp-consensus-beefy", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 kusama-runtime-constants = { package = "kusama-runtime-constants", path = "constants", default-features = false }
-sp-api = { default-features = false , version = "23.0.0" }
-inherents = { package = "sp-inherents", default-features = false , version = "23.0.0" }
-offchain-primitives = { package = "sp-offchain", default-features = false , version = "23.0.0" }
-sp-std = { package = "sp-std", default-features = false , version = "12.0.0" }
-sp-application-crypto = { default-features = false , version = "27.0.0" }
-sp-arithmetic = { default-features = false , version = "20.0.0" }
-sp-genesis-builder = { default-features = false , version = "0.4.0" }
-sp-io = { default-features = false , version = "27.0.0" }
-sp-mmr-primitives = { default-features = false , version = "23.0.0" }
-sp-runtime = { default-features = false , version = "28.0.0" }
-sp-staking = { default-features = false , version = "23.0.0" }
-sp-core = { default-features = false , version = "25.0.0" }
-sp-session = { default-features = false , version = "24.0.0" }
-sp-storage = { default-features = false , version = "17.0.0" }
-sp-version = { default-features = false , version = "26.0.0" }
-tx-pool-api = { package = "sp-transaction-pool", default-features = false , version = "23.0.0" }
-block-builder-api = { package = "sp-block-builder", default-features = false , version = "23.0.0" }
-sp-npos-elections = { default-features = false , version = "23.0.0" }
+sp-api = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+inherents = { package = "sp-inherents", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+offchain-primitives = { package = "sp-offchain", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-std = { package = "sp-std", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-arithmetic = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-io = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-mmr-primitives = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-runtime = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-staking = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-core = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-session = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-version = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+tx-pool-api = { package = "sp-transaction-pool", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+block-builder-api = { package = "sp-block-builder", git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
+sp-npos-elections = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false }
 
-pallet-asset-rate = { default-features = false , version = "4.0.0" }
-pallet-authority-discovery = { default-features = false , version = "25.0.0" }
-pallet-authorship = { default-features = false , version = "25.0.0" }
-pallet-babe = { default-features = false , version = "25.0.0" }
-pallet-bags-list = { default-features = false , version = "24.0.0" }
-pallet-balances = { default-features = false , version = "25.0.0" }
-pallet-beefy = { default-features = false , version = "25.0.0" }
-pallet-beefy-mmr = { default-features = false , version = "25.0.0" }
-pallet-bounties = { default-features = false , version = "24.0.0" }
-pallet-child-bounties = { default-features = false , version = "24.0.0" }
-pallet-transaction-payment = { default-features = false , version = "25.0.0" }
-pallet-transaction-payment-rpc-runtime-api = { default-features = false , version = "25.0.0" }
-pallet-nomination-pools-runtime-api = { default-features = false , version = "20.0.0" }
-pallet-collective = { default-features = false , version = "25.0.0" }
-pallet-conviction-voting = { default-features = false , version = "25.0.0" }
-pallet-democracy = { default-features = false , version = "25.0.0" }
-pallet-elections-phragmen = { default-features = false , version = "26.0.0" }
-pallet-election-provider-multi-phase = { default-features = false , version = "24.0.0" }
-pallet-fast-unstake = { default-features = false , version = "24.0.0" }
-frame-executive = { default-features = false , version = "25.0.0" }
-pallet-grandpa = { default-features = false , version = "25.0.0" }
-pallet-nis = { default-features = false , version = "25.0.0" }
-pallet-identity = { default-features = false , version = "25.0.0" }
-pallet-im-online = { default-features = false , version = "24.0.0" }
-pallet-indices = { git = "https://github.com/agryaznov/polkadot-sdk.git", default-features = false , branch = "ag/indices-genesis" }
-pallet-membership = { default-features = false , version = "25.0.0" }
-pallet-message-queue = { default-features = false , version = "28.0.0" }
-pallet-mmr = { default-features = false , version = "24.0.0" }
-pallet-multisig = { default-features = false , version = "25.0.0" }
-pallet-nomination-pools = { default-features = false , version = "22.0.0" }
-pallet-offences = { default-features = false , version = "24.0.0" }
-pallet-preimage = { default-features = false , version = "25.0.0" }
-pallet-proxy = { default-features = false , version = "25.0.0" }
-pallet-ranked-collective = { default-features = false , version = "25.0.0" }
-pallet-recovery = { default-features = false , version = "25.0.0" }
-pallet-referenda = { default-features = false , version = "25.0.0" }
-pallet-scheduler = { default-features = false , version = "26.0.0" }
-pallet-session = { default-features = false , version = "25.0.0" }
-pallet-society = { default-features = false, version = "25.0.0" }
-frame-support = { default-features = false , version = "25.0.0" }
-pallet-staking = { default-features = false , version = "25.0.0" }
-pallet-state-trie-migration = { default-features = false , version = "26.0.0" }
-pallet-staking-runtime-api = { default-features = false , version = "11.0.0" }
-frame-system = { default-features = false , version = "25.0.0" }
-frame-system-rpc-runtime-api = { default-features = false , version = "23.0.0" }
-pallet-timestamp = { default-features = false , version = "24.0.0" }
-pallet-tips = { default-features = false , version = "24.0.0" }
-pallet-treasury = { default-features = false , version = "24.0.0" }
-pallet-utility = { default-features = false , version = "25.0.0" }
-pallet-vesting = { default-features = false , version = "25.0.0" }
-pallet-whitelist = { default-features = false , version = "24.0.0" }
-pallet-xcm = { default-features = false , version = "4.0.0" }
-pallet-xcm-benchmarks = { default-features = false, optional = true , version = "4.0.0" }
-frame-election-provider-support = { default-features = false , version = "25.0.0" }
+pallet-asset-rate = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis"}
+pallet-authority-discovery = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-authorship = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-babe = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-bags-list = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-balances = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-beefy = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-beefy-mmr = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-bounties = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-child-bounties = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-transaction-payment = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-transaction-payment-rpc-runtime-api = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-nomination-pools-runtime-api = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-collective = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-conviction-voting = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-democracy = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-elections-phragmen = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-election-provider-multi-phase = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-fast-unstake = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+frame-executive = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-grandpa = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-nis = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-identity = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-im-online = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-indices = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false  }
+pallet-membership = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-message-queue = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-mmr = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-multisig = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-nomination-pools = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-offences = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-preimage = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-proxy = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-ranked-collective = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-recovery = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-referenda = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-scheduler = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-session = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-society = { default-features = false, git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+frame-support = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-staking = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-state-trie-migration = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-staking-runtime-api = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+frame-system = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+frame-system-rpc-runtime-api = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-timestamp = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-tips = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-treasury = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-utility = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-vesting = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-whitelist = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
+pallet-xcm = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis"}
+pallet-xcm-benchmarks = { default-features = false, optional = true , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis"}
+frame-election-provider-support = { default-features = false , git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 
-frame-benchmarking = { default-features = false, optional = true , version = "25.0.0" }
-frame-try-runtime = { default-features = false, optional = true , version = "0.31.0" }
-pallet-offences-benchmarking = { default-features = false, optional = true , version = "25.0.0" }
-pallet-session-benchmarking = { default-features = false, optional = true , version = "25.0.0" }
-pallet-nomination-pools-benchmarking = { default-features = false, optional = true , version = "23.0.0" }
-frame-system-benchmarking = { default-features = false, optional = true , version = "25.0.0" }
-pallet-election-provider-support-benchmarking = { default-features = false, optional = true , version = "24.0.0" }
+frame-benchmarking = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false, optional = true }
+frame-try-runtime = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false, optional = true }
+pallet-offences-benchmarking = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false, optional = true }
+pallet-session-benchmarking = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false, optional = true }
+pallet-nomination-pools-benchmarking = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false, optional = true }
+frame-system-benchmarking = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false, optional = true }
+pallet-election-provider-support-benchmarking = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis", default-features = false, optional = true }
 hex-literal = "0.4.1"
 
-runtime-common = { package = "polkadot-runtime-common", default-features = false, version = "4.0.0" }
-runtime-parachains = { package = "polkadot-runtime-parachains", default-features = false , version = "4.0.0" }
-primitives = { package = "polkadot-primitives", default-features = false , version = "4.0.0" }
+runtime-common = { package = "polkadot-runtime-common", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
+runtime-parachains = { package = "polkadot-runtime-parachains", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
+primitives = { package = "polkadot-primitives", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
 
-xcm = { package = "staging-xcm", default-features = false , version = "4.0.0" }
-xcm-executor = { package = "staging-xcm-executor", default-features = false , version = "4.0.0" }
-xcm-builder = { package = "staging-xcm-builder", default-features = false , version = "4.0.0" }
+xcm = { package = "xcm", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
+xcm-executor = { package = "xcm-executor", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
+xcm-builder = { package = "xcm-builder", default-features = false , git = "https://github.com/paritytech/polkadot.git", branch = "master" }
 
 [dev-dependencies]
 tiny-keccak = { version = "2.0.2", features = ["keccak"] }
@@ -126,7 +122,7 @@ tokio = { version = "1.24.2", features = ["macros"] }
 sp-tracing = { default-features = false , version = "14.0.0" }
 
 [build-dependencies]
-substrate-wasm-builder = { version = "14.0.0" }
+substrate-wasm-builder = { git = "https://github.com/agryaznov/polkadot-sdk.git", branch = "ag/indices-genesis" }
 
 [features]
 default = [ "std" ]
@@ -356,3 +352,9 @@ on-chain-release-build = [ "sp-api/disable-logging" ]
 fast-runtime = []
 
 runtime-metrics = [ "runtime-parachains/runtime-metrics", "sp-io/with-tracing" ]
+
+[workspace]
+members = [
+	"",
+	"constants",
+]
